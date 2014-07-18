@@ -28,8 +28,14 @@
     NSLog(@"My dog is named %@. It is %d years old. The breed is %@", myDog.dogName, myDog.age, myDog.dogBreed);
     
     [myDog bark];
+    [myDog barkANumberOfTimes:7];
+    [myDog changeBreedToWerewolf];
     
+    NSLog(@"My dog's breed is now a %@", myDog.dogBreed);
     
+    [myDog barkANumberOfTimes:3 loudly:YES];
+    
+    NSLog(@"My dog's age in dog years is %d", [myDog convertAgeToDogYears:2]);
     
 }
 

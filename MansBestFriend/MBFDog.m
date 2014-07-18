@@ -16,4 +16,41 @@
     NSLog(@"woof");
 }
 
+
+- (void)barkANumberOfTimes:(int)numberOfTimes
+{
+    for (int i = 0 ; i < numberOfTimes ; i ++)
+        [self bark];
+}
+
+
+
+- (void)barkANumberOfTimes:(int)numberOfTimes loudly:(BOOL)isLoud
+{
+    if (isLoud)
+        for (int i = 1 ; i <= numberOfTimes ; i++){
+            NSLog(@"WOOF!");
+        }
+    else
+        for (int i = 1 ; i <= numberOfTimes ; i++){
+            NSLog(@"yip");
+        }
+}
+
+
+- (void)changeBreedToWerewolf
+{
+    self.dogBreed = @"Werewolf";
+}
+
+
+- (int) convertAgeToDogYears:(int)age
+{
+    int newAge = age * 7;
+    
+    return newAge;
+}
+
+
+
 @end
