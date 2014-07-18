@@ -10,4 +10,6 @@
 
 @interface MBFViewController : UIViewController
 
+@property (strong, nonatomic) NSMutableArray *dogArray;
+
 @end
